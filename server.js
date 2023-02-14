@@ -19,7 +19,9 @@ app.get('/', (req, res) => {
     res.send('welcome');
 });
 
-
+/**
+ * Define project routes
+ */
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/jobs', jobsRouter);
 
